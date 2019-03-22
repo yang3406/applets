@@ -36,13 +36,14 @@ Component({
   methods: {
     onLeft: function () {
       if (!this.first) {
-        this.triggleEvent("left", {}, {});
+        this.triggerEvent("left", {}, {}); //是triggerEvent 不是trggleEvent
       }
 
     },
     onRight: function () {
+      console.log("ppp");
       if (!this.latest) {
-        this.triggleEvent("right", {}, {});
+        this.triggerEvent("right", {}, {});
       }
     }
   }

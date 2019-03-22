@@ -1,1 +1,12 @@
-/* pages/static/static.wxss */
+.container{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.header{
+  width: 100%;
+}
+.nav{
+  position: absolute;
+  bottom: 30px;
+}

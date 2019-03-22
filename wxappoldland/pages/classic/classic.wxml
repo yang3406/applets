@@ -1,5 +1,5 @@
 <!--pages/static/static.wxml-->
-<view>
+<view class="container">
   <view class="header">
     <view class="date">
       <y-epsoide index="{{classic.index}}"></y-epsoide>
@@ -12,7 +12,7 @@
   <view class="main">
     <y-movie imgUrl="{{classic.image}}" content="{{classic.content}}" kind="{{classic.type}}"></y-movie>
   </view>
-  <view>
-    <y-nav title="{{classic.title}}" latest="true" first="true"></y-nav>
+  <view class="nav">
+    <y-nav title="{{classic.title}}" bind:left="preview" bind:right="next" latest="true" first="true"></y-nav>
   </view>
 </view>
