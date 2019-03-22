@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/demo/demo",
+    "pages/index/index",
+    "pages/register",
+    "pages/gotopark/gotopark",
+    "pages/orderList/orderList",
+    "pages/chooseWayToPark/chooseWayToPark",
+    "pages/mine/mine",
+    "pages/parkWaiting/parkWaiting",
+    "pages/myWallet/myWallet",
+    "pages/orderDetail/orderDetail",
+    "pages/nowpark/nowpark",
+    "pages/roadDetail/roadDetail",
+    "pages/arrearDetail/arrearDetail",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "宜停车",
+    "navigationBarTextStyle": "black"
+  }
+}

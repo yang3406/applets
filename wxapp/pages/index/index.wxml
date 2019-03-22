@@ -1,0 +1,29 @@
+<view class="container">
+  <map id="ytcMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location
+    style="width: 100%; height: {{mapHeight}}px;" class='{{isMarkerClicked?"marker-taped":""}}'></map>
+
+  <view class="handle-block">
+    <navigator url='../roadDetail/roadDetail?sectionid={{markerChecked.SectionId}}&longitude={{theMapCenterLocation.longitude}}&latitude={{theMapCenterLocation.latitude}}'>
+      <view class="road-block" hidden="{{isShowDetail}}">
+        <view class="road-msg">
+          <image src="../../image/location_green.png" mode="widthFix" class='icon-location'></image>
+          <text class='section-name'>{{markerChecked.SectionName}}</text>
+          <text class='the-distance'>{{markerChecked.BerthTotal}}m</text>
+          <image src="../../image/pub_ic_arrow@2x.png" mode="widthFix" class="icon-right"></image>
+        </view>
+        <view class="road-msg">
+          <text class='txt-parkspace'>{{markerChecked.BerthVacant}}</text>
+          <text class='txt-parkspace'>总位：{{markerChecked.BerthTotal}}</text>
+        </view>
+      </view>
+    </navigator>
+
+    <navigator url="../gotopark/gotopark"><!--暂时关闭扫码停车这个渠道 url="../chooseWayToPark/chooseWayToPark" -->
+      <view class="btn-park">
+        <image src="../../image/map_scan_ic.png" mode="widthFix"></image>
+        <text>我要停车</text>
+      </view>
+    </navigator>
+  </view>
+
+</view>

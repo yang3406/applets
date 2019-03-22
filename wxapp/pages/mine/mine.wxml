@@ -1,0 +1,51 @@
+<import src="../../template/common.wxml" />
+
+<view class='container'>
+  <view class="mine-top">
+    <image src='{{userInfo.avatarUrl!="" &&userInfo.avatarUrl!=undefined?userInfo.avatarUrl:"../../image/scan_logo_ic.png"}}' mode="widthFix" class='the-left'></image>
+    <view class='the-right'>
+      <text>{{userInfo.nickName!="" &&userInfo.nickName!=undefined?userInfo.nickName:"Mr.L"}}</text>
+      <text>{{mobileno}}</text>
+    </view>
+  </view>
+
+  <view class='items-block'>
+    <navigator url="../myWallet/myWallet">
+      <view class='item-block'>
+        <view class='item-left'>
+          <image src='../../image/me_wallet_ic.png' mode="widthFix"></image>
+          <text>我的钱包</text>
+        </view>
+        <view class='item-right'>
+          <text>余额 {{balance}}元</text>
+          <image src='../../image/pub_ic_arrow@2x.png' mode="widthFix"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../orderList/orderList">
+      <view class='item-block'>
+        <view class='item-left'>
+          <image src='../../image/me_indent_ic.png' mode="widthFix"></image>
+          <text>我的订单</text>
+        </view>
+        <view class='item-right'>
+          <text class='order-count'>{{orderCount}}</text>
+          <image src='../../image/pub_ic_arrow@2x.png' mode="widthFix"></image>
+        </view>
+      </view>
+    </navigator>
+    <!-- <view class='item-block'>
+      <view class='item-left'>
+        <image src='../../image/me_indent_ic.png' mode="widthFix"></image>
+        <text>修改支付密码</text>
+      </view>
+      <view class='item-right'>
+        <text></text>
+        <image src='../../image/pub_ic_arrow@2x.png' mode="widthFix"></image>
+      </view>
+    </view> -->
+  </view>
+
+  <!--客服电话  -->
+  <template is='contact'></template>
+</view>

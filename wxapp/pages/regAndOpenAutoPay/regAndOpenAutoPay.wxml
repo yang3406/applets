@@ -1,0 +1,58 @@
+<view class='container' hidden='{{isHideContainer}}'>
+  <view class='err-tips' wx:if='{{currentStep==1 && beforeGetPhoneNum==false && errTips!=""}}'>{{errTips}}</view>
+  <!--页面执行步骤 begin -->
+  <view class='step-contain'>
+    <view class='step-panel'>
+      <view class='step-item {{currentStep>=1?"active":""}}'>
+        <image src='../../image/account_ic.png' mode="widthFix"></image>
+        <text>绑定账户</text>
+      </view>
+      <view class='icon-split {{currentStep>=2?"active":""}}'></view>
+      <view class='step-item {{currentStep>=2?"active":""}}'>
+        <image src='../../image/pay_click_ic.png' mode="widthFix" wx:if="{{currentStep>=2}}"></image>
+        <image src='../../image/pay_ic.png' mode="widthFix" wx:else></image>
+        <text>开通免密支付</text>
+      </view>
+      <view class='icon-split {{currentStep>=3?"active":""}}'></view>
+      <view class='step-item {{currentStep>=3?"active":""}}'>
+        <image src='../../image/scan_ic.png' mode="widthFix" wx:if="{{currentStep>=3}}"></image>
+        <image src='../../image/scan_ic.png' mode="widthFix" wx:else></image>
+        <text>扫码停车</text>
+      </view>
+    </view>
+  </view>
+  <!--页面执行步骤 end -->
+  <!--提示绑定账户 begin -->
+  <view class='confirm-bind' wx:if="{{currentStep==1 && beforeGetPhoneNum==true}}">
+    <image src='../../image/binding_bg.png' mode="widthFix"></image>
+    <text>绑定宜停车账户，畅想路边停车</text>
+    <button type='primary' class='btn-bind' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">立即绑定</button>
+  </view>
+  <!--提示绑定账户 end -->
+  <!--绑定账户 begin -->
+  <view class='register-panel' wx:if="{{currentStep==1 && beforeGetPhoneNum==false}}">
+    <view class='form-block'>
+      <view class='form-item'>
+        <text>手机号码</text>
+        <input class="txt-tel" type="number" maxlength="11" placeholder="请填写手机号码" bindblur="telBlur" bindinput='telInput' value='{{txtTel}}' focus='{{}}' />
+        <image mode='widthFix' src='../../image/icon_clear.png' class='icon-clear' hidden='{{isHideTelIconClear}}' bindtap='tapTelIconClear'></image>
+        <text class='btn-getcode {{canGetCode?"can-do":""}}' bindtap='tabGetCode'>{{btnGetCodeText}}</text>
+      </view>
+      <view class='form-item'>
+        <text>验证码</text>
+        <input class="txt-code" type="number" maxlength="6" placeholder="请填写验证码" bindblur="codeBlur" bindinput='codeInput' value='{{txtCode}}' focus='{{}}' />
+        <image mode='widthFix' src='../../image/icon_clear.png' class='icon-clear' hidden='{{isHideCodeIconClear}}' bindtap='tapCodeIconClear'></image>
+      </view>
+    </view>
+    <button type="primary" class='btn-register {{canRegist?"can-regist":""}}' bindtap='tapToRegister'>提交</button>
+  </view>
+  <!--绑定账户 end -->
+  <!--提示开通免密支付 begin -->
+  <view class='confirm-openpay' wx:if="{{currentStep==2}}">
+    <image src='../../image/dredge_bg.png' mode="widthFix"></image>
+    <text>开通免密支付，无感畅想停车</text>
+    <button type="primary" class='btn-openpay' bindtap='tapOpenPay'>开启免密支付</button>
+  </view>
+  <!--提示开通免密支付 end -->
+
+</view>

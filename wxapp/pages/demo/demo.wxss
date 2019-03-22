@@ -1,0 +1,17 @@
+.container {
+}
+
+.order-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: grey;
+  /* transition: top 0.5s; */
+}
+
+.order-wrap text {
+  display: block;
+}

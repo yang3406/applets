@@ -1,0 +1,19 @@
+<view class="container">
+  <view class='order-wrap' bindtouchmove='touchMoveOW' style='{{layoutStyle}}px;'>
+    <text>卡卡卡卡卡卡</text>
+    <text>222222222222</text>
+    <text>555555555555555</text>
+    <text>卡卡卡卡卡卡</text>
+    <text>8888888888888888888</text>
+    <text>8888888888888888888</text>
+    <text>8888888888888888888</text>
+    <text>8888888888888888888</text>
+    <text>8888888888888888888</text>
+    <text>8888888888888888888</text>
+    <text>8888888888888888888</text>
+    <text>8888888888888888888</text>
+    <text>8888888888888888888</text>
+    <text>8888888888888888888</text>
+    <text>55555555555555555</text>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<view class='container'>
+  <view class='order-items'>
+    <block wx:for='{{items}}' wx:key='index'>
+      <navigator url='../orderDetail/orderDetail?ordercode={{item.BargainOrderCode}}'>
+        <view class='order-item'>
+          <view class='order-item-top'>
+            <text>{{item.StartParkingTime}}</text>
+            <text class='{{item.OrderStatus=="已完成"?"":"color-orange"}}'>{{item.OrderStatus}}</text>
+          </view>
+          <view class='order-item-middle'>
+            <text>{{item.SectionName}}</text>
+          </view>
+          <view class='order-item-bottom'>
+            <text>{{item.ActualDuration}}</text>
+            <text>{{item.OrderStatus=="已完成"?item.ActualPrice:item.ArrearsPrice}}</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+  <view class='no-data' hidden='{{isHasData}}'>
+    <image mode='widthFix' src='../../image/order_not.png'></image>
+    <text>目前还没有订单</text>
+  </view>
+</view>

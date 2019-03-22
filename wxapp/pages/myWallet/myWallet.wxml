@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class='balance-block'>
+    <view class='balance-top'>
+      <image mode='widthFix' src='../../image/money_balance_ic.png'></image>
+      <text>余额(元)</text>
+    </view>
+    <text>{{balance}}</text>
+  </view>
+
+  <view class='recharge-block'>
+    <view class='recharge-quick'>
+      <text data-amount='300' bindtap='chooseAmount' class='{{active==300?"active":""}}'>300</text>
+      <text data-amount='200' bindtap='chooseAmount' class='{{active==200?"active":""}}'>200</text>
+      <text data-amount='100' bindtap='chooseAmount' class='{{active==100?"active":""}}'>100</text>
+      <text data-amount='50' bindtap='chooseAmount' class='{{active==50?"active":""}}'>50</text>
+    </view>
+    <input type='digit' placeholder='输入其他金额' placeholder-style='color:rgba(0,0,0,0.64);font-size:28rpx;' class='txt-recharge' value='{{txtRecharge}}' bindinput='inputToRecharge' maxlength='10'></input>
+    <button type="primary" class='btn-recharge' bindtap='tapToRecharge'>充值</button>
+  </view>
+</view>

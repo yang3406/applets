@@ -1,0 +1,158 @@
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 50%;
+  /* bottom: -1px; */
+  background-image: linear-gradient(to bottom, #369e9d 10%, #44cdac 60%);
+}
+
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+
+.bgBottom {
+  z-index: 5;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.waveTop {
+  background-size: 50% 70rpx;
+}
+
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.waveMiddle {
+  background-size: 50% 90rpx;
+}
+
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+  background-size: 50% 70rpx;
+}
+
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+
+/*以上是纯水波浪动画的样式*/
+
+.time-block {
+  width: 100%;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  z-index: 20;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+}
+
+.time-top {
+  font-size: 32rpx;
+  margin-bottom: 27rpx;
+}
+
+.time-top>image {
+  width: 36rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 17rpx;
+}
+
+.time-top>text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.time-bottom {
+  font-size: 100rpx;
+  font-family: 'PingFang-SC-Light';
+}
+
+.detail-block {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 10;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  overflow: hidden;
+  text-align: center;
+}
+
+.detail-left {
+  width: 50%;
+  float: left;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.detail-right {
+  width: 50%;
+  float: right;
+}
+
+.detail-left>text, .detail-right>text {
+  display: block;
+}
+
+.detail-left>text:first-of-type, .detail-right>text:first-of-type {
+  color: #333;
+  font-size: 48rpx;
+  margin-bottom: 10rpx;
+}
+
+.detail-left>text:last-of-type, .detail-right>text:last-of-type {
+  color: #999;
+  font-size: 28rpx;
+}

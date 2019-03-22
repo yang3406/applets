@@ -1,0 +1,98 @@
+@import '../../template/common.wxss';
+
+page {
+  background-color: #f2f2f2;
+  padding-top: 33rpx;
+}
+
+.container {
+}
+
+.mine-top {
+  background-color: #fff;
+  padding: 20rpx 34rpx;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 28rpx;
+}
+
+.the-left {
+  float: left;
+  width: 129rpx;
+  margin-right: 23rpx;
+  border-radius: 100%;
+}
+
+.the-right {
+  float: left;
+  padding-top: 18rpx;
+}
+
+.the-right>text {
+  display: block;
+}
+
+.the-right>text:first-of-type {
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 38rpx;
+  letter-spacing: 1px;
+  margin-bottom: 10rpx;
+}
+
+.the-right>text:last-of-type {
+  color: rgba(153, 153, 153, 0.88);
+  font-size: 24rpx;
+}
+
+.items-block {
+  background-color: #fff;
+  width: 100%;
+}
+
+.item-block {
+  border-bottom: 28rpx solid #f3f3f3;
+  overflow: hidden;
+  padding: 24rpx 35rpx;
+}
+
+.item-left {
+  float: left;
+}
+
+.item-right {
+  float: right;
+}
+
+.item-block image, .item-block text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item-left>image {
+  width: 36rpx;
+  margin-right: 23rpx;
+}
+
+.item-left>text {
+  font-size: 32rpx;
+  color: rgba(29, 29, 38, 0.85);
+}
+
+.item-right>image {
+  width: 14rpx;
+  margin-left: 18rpx;
+}
+
+.item-right>text {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.item-right>text.order-count {
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  background-color: #f60;
+  font-size: 20rpx;
+  color: #fff;
+  text-align: center;
+}

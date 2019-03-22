@@ -1,0 +1,16 @@
+<import src="../../template/common.wxml" />
+
+<view class="container">
+  <view class="way-top">
+    <text>欢迎使用宜停车</text>
+    <text>请规范使用道路停车资源</text>
+  </view>
+  <button type="primary" class='btn-scanpark' bindtap='tapToScanCode'>扫码停车</button>
+  <button type="default" class='btn-input' bindtap='tapToInput'>手动输入泊位号</button>
+<view class='way-confirm'>
+温馨提示：目前仅有少量路段支持扫码停车，不能扫码请手动输入泊位号。
+</view>
+
+  <!--客服电话  -->
+  <template is='contact'></template>
+</view>

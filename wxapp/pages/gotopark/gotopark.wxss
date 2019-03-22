@@ -1,0 +1,86 @@
+@import '../../template/keyboardNum.wxss';
+
+.container {
+  width: 100%;
+  padding: 33rpx;
+}
+
+.berth-contain {
+  border-bottom: 12rpx solid #f8f8f8;
+  padding-bottom: 40rpx;
+}
+
+.title-item {
+  font-size: 32rpx;
+  color: #333;
+  padding: 10rpx 0 28rpx 0;
+}
+
+.berth-panel {
+  border: 1px solid #e2e2e2;
+  border-radius: 10rpx;
+  display: -moz-box;
+  display: -webkit-box;
+  display: flex;
+  height: 100rpx;
+  background-color: #fff;
+}
+
+.berth-panel > text {
+  display: block;
+  width: 1px;
+  height: 100%;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+  font-size: 56rpx;
+  text-align: center;
+  line-height: 100rpx;
+  position: relative;
+}
+
+.berth-panel > text:not(:last-child) {
+  border-right: 1px dashed #e5e5e5;
+}
+
+.berth-panel > text.current-box:before {
+  content: '';
+  border: 4rpx solid #39a4ac;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -4rpx;
+  left: -4rpx;
+  z-index: 5;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+}
+
+.berth-block {
+  overflow: hidden;
+  margin-top: 14rpx;
+}
+
+.berth-prompt {
+  float: left;
+}
+
+.berth-prompt > image {
+  width: 26rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 13rpx;
+}
+
+.berth-prompt > text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: rgba(29, 29, 38, 0.5);
+}
+
+button[type="primary"].btn-topark {
+  background-color: #1bbc9b;
+  margin-top: 50rpx;
+}

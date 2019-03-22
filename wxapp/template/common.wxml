@@ -1,0 +1,6 @@
+<template name='contact'>
+  <view class='contact-block'>
+    <image src='../../image/scan_phone_ic.png' mode="widthFix"></image>
+    <text>客服电话：96001</text>
+  </view>
+</template>

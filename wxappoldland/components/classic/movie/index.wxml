@@ -1,0 +1,5 @@
+<view class="intro-container">
+  <image class="postimg" src="{{imgUrl}}"></image>
+  <image class="typeimg" src="{{typeUrl}}"></image>
+  <text>{{content}}</text>
+</view>

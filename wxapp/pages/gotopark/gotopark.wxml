@@ -1,0 +1,22 @@
+<import src="../../template/keyboardNum.wxml" />
+
+<view class='container'>
+<form bindsubmit="tapToPark" report-submit="true">
+  <view class='berth-contain'>
+    <view class='title-item'>请输入泊位号</view>
+    <view class='berth-panel' id='berthPanel'>
+      <block wx:for='{{6}}' wx:key='item'>
+        <text data-which-box='{{item+1}}' bindtap='clickBox' class='{{item+1==whichBox?"current-box":""}}'>{{codeArr[item]}}</text>
+      </block>
+    </view>
+    <view class='berth-block'>
+      <view class='berth-prompt'>
+        <image mode='widthFix' src='../../image/berth_remind_ic.png'></image>
+        <text>{{needpaytimespan}}</text>
+      </view>
+    </view>
+  </view>
+  <button type="primary" formType="submit" class='btn-topark'>确认停车</button>
+</form>
+  <template is='keyboardNum' data='{{isHideKeyBoardNum,isShowKeyBgcolor}}'></template>
+</view>

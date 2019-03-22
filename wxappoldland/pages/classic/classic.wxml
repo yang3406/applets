@@ -1,0 +1,18 @@
+<!--pages/static/static.wxml-->
+<view>
+  <view class="header">
+    <view class="date">
+      <y-epsoide index="{{classic.index}}"></y-epsoide>
+      <y-like num="{{classic.fav_nums}}" likeFlag="{{like_status}}" bind:like="onLike"></y-like>
+    </view>
+  </view>
+  <view>
+    <button bind:tap="onclick">点击触发事件</button>
+  </view>
+  <view class="main">
+    <y-movie imgUrl="{{classic.image}}" content="{{classic.content}}" kind="{{classic.type}}"></y-movie>
+  </view>
+  <view>
+    <y-nav title="{{classic.title}}" latest="true" first="true"></y-nav>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<view class='container'>
+  <!-- hidden='{{isHideContainer}}-->
+  <view class='time-block'>
+    <view class='time-top'>
+      <image mode='widthFix' src='../../image/park_berth_ic.png'></image>
+      <text>泊位编号</text>
+    </view>
+    <view class='time-bottom'>
+      <text>{{berthcode}}</text>
+    </view>
+  </view>
+
+  <view class='progress-block'>
+    <view class="the-percent">
+      <text>{{currentPercent}}</text>
+      <text>%</text>
+    </view>
+    <view class="pulse1"></view>
+    <view class="pulse2"></view>
+    <view class="pulse3"></view>
+  </view>
+
+  <text class='txt-status'>下单中...</text>
+</view>

@@ -1,0 +1,25 @@
+
+.contact-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-block>image, .contact-block>text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact-block>image {
+  width: 30rpx;
+  margin-right: 17rpx;
+}
+
+.contact-block>text {
+  color: #999;
+  font-size: 24rpx;
+  padding: 40rpx 0;
+}

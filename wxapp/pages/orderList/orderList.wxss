@@ -1,0 +1,76 @@
+.container {
+}
+
+.order-items {
+  width: 100%;
+}
+
+.order-item {
+  border-bottom: 16rpx solid #f8f8f8;
+  padding: 20rpx 32rpx;
+}
+
+.order-item-top {
+  font-size: 24rpx;
+  color: rgba(29, 29, 38, 0.5);
+  overflow: hidden;
+  padding: 14rpx 0;
+}
+
+.order-item-top>text:first-of-type {
+  float: left;
+}
+
+.order-item-top>text:last-of-type {
+  float: right;
+}
+
+.order-item-top>text:last-of-type.color-orange {
+  color: #f60;
+}
+
+.order-item-middle {
+  overflow: hidden;
+  padding: 18rpx 0;
+  border-top: 1px solid #eaeaea;
+  color: #555559;
+  font-size: 28rpx;
+}
+
+.order-item-bottom {
+  overflow: hidden;
+}
+
+.order-item-bottom>text {
+  font-size: 24rpx;
+  color: #aaa;
+}
+
+.order-item-bottom>text:first-of-type {
+  float: left;
+}
+
+.order-item-bottom>text:last-of-type {
+  float: right;
+  color: #f60;
+}
+
+.order-item-bottom>text:last-of-type::after {
+  content: '元';
+}
+
+.no-data {
+  text-align: center;
+  padding: 40rpx;
+}
+
+.no-data>image {
+  width: 120rpx;
+}
+
+.no-data>text {
+  display: block;
+  color: #333;
+  font-size: 32rpx;
+  margin-top: 24rpx;
+}

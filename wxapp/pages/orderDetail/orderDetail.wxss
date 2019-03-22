@@ -1,0 +1,112 @@
+page {
+  background-color: #f2f2f2;
+}
+
+.container {
+  padding: 20rpx;
+}
+
+.order-detial {
+  width: 100%;
+  letter-spacing: 1rpx;
+  position: relative;
+}
+
+.order-status {
+  position: absolute;
+  right: 0;
+  top: 80rpx;
+  height: 40rpx;
+  line-height: 36rpx;
+  padding: 0 10rpx 0 20rpx;
+  text-align: center;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.order-status>text {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 24rpx;
+}
+
+.split-line {
+  width: 100%;
+  display: block;
+}
+
+.order-title {
+  display: block;
+  color: #555559;
+  font-size: 44rpx;
+  text-align: center;
+  background-color: #fff;
+}
+
+.text-road {
+  display: block;
+  font-size: 28rpx;
+  color: #a8a8aa;
+  padding: 20rpx 0 38rpx 0;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px dashed #eaeaea;
+  margin-bottom: 38rpx;
+}
+
+.order-block-top, .order-block-bottom {
+  padding: 38rpx 28rpx 10rpx 28rpx;
+  font-size: 26rpx;
+  background-color: #fff;
+}
+
+.order-block-top {
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+
+.order-block-bottom {
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+.order-block-top>view, .order-block-bottom>view {
+  overflow: hidden;
+}
+
+.title {
+  color: #a8a8aa;
+  margin-right: 35rpx;
+  float: left;
+}
+
+.text {
+  color: #555559;
+  float: left;
+  margin-bottom: 20rpx;
+}
+
+.txt-fee {
+  color: #ff8829;
+}
+
+.txt-fee::after {
+  content: '元';
+}
+
+.the-prompt {
+  padding: 20rpx 20rpx;
+}
+
+.the-prompt> image {
+  width: 26rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 13rpx;
+}
+
+.the-prompt > text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: rgba(29, 29, 38, 0.5);
+}

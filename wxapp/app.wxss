@@ -1,0 +1,10 @@
+/**app.wxss**/
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button::after {
+  border: 0;
+}

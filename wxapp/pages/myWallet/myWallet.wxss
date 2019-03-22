@@ -1,0 +1,75 @@
+.balance-block {
+  width: 100%;
+  padding: 73rpx 0 101rpx 0;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #369e9d, #44cdac);
+}
+
+.balance-block>text {
+  font-size: 100rpx;
+  font-family: 'PingFang-SC-Light';
+}
+
+.balance-top {
+  margin-bottom: 30rpx;
+}
+
+.balance-top>image {
+  width: 36rpx;
+  margin-right: 16rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.balance-top>text {
+  font-size: 32rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.recharge-block {
+  padding: 32rpx;
+}
+
+.recharge-quick {
+  overflow: hidden;
+}
+
+.recharge-quick>text {
+  width: 22.75%;
+  float: left;
+  box-sizing: border-box;
+  border-radius: 12rpx;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 96rpx;
+  font-size: 40rpx;
+  color: rgba(0,0,0,0.88);
+}
+
+.recharge-quick>text:not(:last-of-type) {
+  margin-right: 3%;
+}
+
+.recharge-quick>text::after {
+  content: '元';
+}
+
+.recharge-quick>text.active {
+  border: 1px solid #1bbc9b;
+  background-color: #1bbc9b;
+  color: #fff;
+}
+
+.txt-recharge {
+  height: 100rpx;
+  font-size: 40rpx;
+  color: rgba(0,0,0,0.88);
+  margin: 40rpx 0;
+  padding-left: 2%;
+}
+
+button[type="primary"].btn-recharge {
+  background-color: #1bbc9b;
+}

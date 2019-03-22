@@ -1,0 +1,99 @@
+.container {
+  height: 100vh;
+}
+
+/* #ytcMap {
+  transition: 0.1s ease-in height;
+} */
+
+.handle-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  width: 100%;
+  height: auto;
+  transition: 0.8s ease-in height;
+}
+
+.road-block {
+  padding: 34rpx 29rpx 28rpx 35rpx;
+}
+
+.road-msg {
+  font-size: 32rpx;
+  color: #333;
+  position: relative;
+}
+
+.road-msg:first-of-type {
+  margin-bottom: 16rpx;
+}
+
+.icon-location {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28rpx;
+}
+
+.section-name {
+  display: inline-block;
+  vertical-align: middle;
+  color: #444;
+  font-size: 36rpx;
+  margin: 0 20rpx 0 14rpx;
+}
+
+.the-distance {
+  display: inline-block;
+  vertical-align: bottom;
+  color: #999;
+  font-size: 24rpx;
+}
+
+.icon-right {
+  width: 14rpx;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.txt-parkspace {
+  margin-right: 42rpx;
+  font-size: 28rpx;
+  color: #ff801a;
+}
+
+.txt-parkspace:first-of-type::before {
+  content: '空车位：';
+  color: #666;
+}
+
+.txt-parkspace:last-of-type {
+  color: #666;
+}
+
+.btn-park {
+  height: 44px;
+  line-height: 42px;
+  font-size: 32rpx;
+  background-color: #1bbc9b;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-park>image {
+  width: 39rpx;
+  height: 36rpx;
+  margin-right: 19rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-park>text {
+  display: inline-block;
+  vertical-align: middle;
+}

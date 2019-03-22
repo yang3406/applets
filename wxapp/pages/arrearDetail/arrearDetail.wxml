@@ -1,0 +1,42 @@
+<view class='container'>
+  <view class="order-detial">
+    <view class="order-block-top">
+      <text class='order-title'>欠费通知</text>
+      <text class='text-road'>文锦路-黄贝岭片区</text>
+      <view class='order-status'>
+        <image mode='widthFix' src='../../image/pub_list_ic_orange@2x.png'></image>
+        <text>未缴费</text>
+      </view>
+      <view>
+        <text class="title">泊位编号</text>
+        <text class="text">900010</text>
+      </view>
+      <view>
+        <text class="title">驶入时间</text>
+        <text class="text">2018-1-5 10:58:47</text>
+      </view>
+      <view>
+        <text class="title">驶出时间</text>
+        <text class="text">2018-1-5 10:58:19</text>
+      </view>
+      <view>
+        <text class="title">计费时长</text>
+        <text class="text">2018-1-5 10:58:19至20:00:00</text>
+      </view>
+    </view>
+    <image mode='widthFix' src='../../image/zhongjian_bg@2x.png' class='split-line'></image>
+    <view class="order-block-bottom">
+      <view>
+        <text class="title">补缴金额</text>
+        <text class="text txt-fee">18.00</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='the-prompt'>
+    <image mode='widthFix' src='../../image/berth_remind_ic.png'></image>
+    <text>温馨提示：欠费支付完成后，即可进行正常停车</text>
+  </view>
+
+  <button type="primary" class='btn-topay'>去支付</button>
+</view>

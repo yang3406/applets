@@ -1,0 +1,56 @@
+<view class='container'>
+  <view class='road-block'>
+    <view class='road-left'>
+      <text>{{sectionObj.SectionName}}</text>
+      <text>>{{sectionObj.Dis_T}}</text>
+      <text class='icon-berthstatus'>{{sectionObj.BerthType}}</text>
+    </view>
+    <view class='road-right'>
+      <canvas style="width: 150rpx; height: 180rpx;" canvas-id="firstCanvas"></canvas>
+      <view class='berth-count'>
+        <text>{{sectionObj.BerthVacant}}</text>
+        <text>/{{sectionObj.BerthTotal}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='charge-block'>
+    <view class="the-title">收费时段</view>
+    <view class="the-options">
+      <view class="the-option" id="feeTime">
+        <view class="the-left">{{sectionObj.TodayType}}</view>
+        <view class="the-right">
+          <block wx:for='{{sectionObj.FeeTime}}' wx:key='index' wx:for-item='item'>
+            <view class="the-item">
+              <text>{{item.ChargeTime}}</text>
+              <text class='{{item.ChargeType=="收费"?"color-fee":""}}'>{{item.ChargeType}}</text>
+            </view>
+          </block>
+          <!-- <view class="the-item">
+            <text>07:30-19:59</text>
+            <text class="color-fee">收费</text>
+          </view>
+          <view class="the-item">
+            <text>20:00-23:59</text>
+            <text>免费</text>
+          </view> -->
+        </view>
+      </view>
+    </view>
+    <view class="the-title">收费规则</view>
+    <view class="the-rule" wx:for='{{sectionObj.ChargingRules}}' wx:key='index' wx:for-item='item'>
+      <image mode='widthFix' src='../../image/detail_ic_money@2x.png'></image>
+      <view>
+        <text>{{item.time}}</text>
+        <text>{{item.price}}</text>
+      </view>
+    </view>
+  </view>
+
+  <navigator url='../gotopark/gotopark'><!--暂时关闭扫码停车这个渠道 url='../chooseWayToPark/chooseWayToPark'-->
+    <view class="btn-park">
+      <image src="../../image/map_scan_ic.png" mode="widthFix"></image>
+      <text>我要停车</text>
+    </view>
+  </navigator>
+</view>

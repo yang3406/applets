@@ -1,0 +1,53 @@
+@import '../../template/common.wxss';
+
+.container {
+  padding: 0 35rpx;
+  text-align: center;
+}
+
+.way-top {
+  padding: 119rpx 0 60rpx 0;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.way-top>text {
+  display: block;
+}
+
+.way-top>text:first-of-type {
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 48rpx;
+  letter-spacing: 1px;
+  margin-bottom: 22rpx;
+}
+
+.way-top>text:last-of-type {
+  color: rgba(153, 153, 153, 0.88);
+  font-size: 24rpx;
+}
+
+button[type="primary"].btn-scanpark {
+  background-color: #1bbc9b;
+  margin-bottom: 50rpx;
+}
+
+button[type="default"].btn-input {
+  background-color: #fff;
+  color: #1bbc9b;
+}
+
+button[type="default"].btn-input::after {
+  border: 1px solid #1bbc9b;
+}
+
+.way-confirm {
+  text-align: left;
+  color: rgba(153, 153, 153, 0.88);
+  font-size: 24rpx;
+  line-height: 46rpx;
+  margin-top: 80rpx;
+  letter-spacing: 4rpx;
+}

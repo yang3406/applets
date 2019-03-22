@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/classic/classic",
+    "pages/bookmenu/bookmenu",
+    "pages/collection/collection"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "旧岛书店",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#c7c7c7",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "text": "流行",
+        "pagePath": "pages/classic/classic",
+        "iconPath": "images/tab-menu/classic.png",
+        "selectedIconPath": "images/tab-menu/classic@highlight.png"
+      },
+      {
+        "text": "书单",
+        "pagePath": "pages/bookmenu/bookmenu",
+        "iconPath": "images/tab-menu/book.png",
+        "selectedIconPath": "images/tab-menu/book@highlight.png"
+      },
+      {
+        "text": "喜欢",
+        "pagePath": "pages/collection/collection",
+        "iconPath": "images/tab-menu/my.png",
+        "selectedIconPath": "images/tab-menu/my@highlight.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 1000,
+    "downloadFile": 1000
+  },
+  "debug": true
+}

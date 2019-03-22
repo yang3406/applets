@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="waveWrapper waveAnimation">
+    <view class="waveWrapperInner bgTop">
+      <view class="wave waveTop" style="background-image: url('{{waveSrcBase}}/wave-mid.png')"></view>
+    </view>
+    <view class="waveWrapperInner bgMiddle">
+      <view class="wave waveMiddle" style="background-image: url('{{waveSrcBase}}/wave-mid.png')"></view>
+    </view>
+    <view class="waveWrapperInner bgBottom">
+      <view class="wave waveBottom" style="background-image: url('{{waveSrcBase}}/wave-bot.png')"></view>
+    </view>
+  </view>
+
+  <view class='time-block'>
+    <view class='time-top'>
+      <image mode='widthFix' src='../../image/billing_time_ic.png'></image>
+      <text>停车时长</text>
+    </view>
+    <view class='time-bottom'>
+      <text>{{theHours}}</text> :
+      <text>{{theMinutes}}</text> :
+      <text>{{theSeconds}}</text>
+    </view>
+  </view>
+
+  <view class='detail-block'>
+    <view class='detail-left'>
+      <text>{{orderObj.BerthCode}}</text>
+      <text>泊位编号</text>
+    </view>
+    <view class='detail-right'>
+      <text>{{orderObj.price}}</text>
+      <text>订单金额(元)</text>
+    </view>
+  </view>
+
+</view>

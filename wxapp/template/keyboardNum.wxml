@@ -1,0 +1,17 @@
+<template name='keyboardNum'>
+  <view class='numkb-panel' hidden='{{isHideKeyBoardNum}}'>
+    <view class='numkb-handle'>
+      <text class='numkb-handle-close' bindtap='tapClose'>确定</text>
+    </view>
+    <view class='numkb-keys'>
+      <block wx:for='{{9}}' wx:key='item'>
+        <text data-which-key='{{item+1}}' bindtap='tapKey' class='{{item+1==isShowKeyBgcolor?"numkey-bgcolor":""}}'>{{item+1}}</text>
+      </block>
+      <text></text>
+      <text data-which-key='0' bindtap='tapKey' class='{{item+1==isShowKeyBgcolor?"numkey-bgcolor":""}}'>0</text>
+      <view data-which-key='del' class='icon-del {{isShowKeyBgcolor=="del"?"numkey-bgcolor":""}}' id='btnDel' bindtap='tapDel'>
+        <image mode='widthFix' src='../../image/icon_del@2x.png'></image>
+      </view>
+    </view>
+  </view>
+</template>

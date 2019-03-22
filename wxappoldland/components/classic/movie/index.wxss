@@ -1,0 +1,26 @@
+.intro-container{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.intro-container .postimg{
+  width: 100vw;
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.intro-container .typeimg{
+  position: relative;
+  width: 50rpx;
+  height: 160rpx;
+  right: 290rpx;
+  bottom: 35px;
+}
+.intro-container text{
+  font-size: 34rpx;
+  color:#0f0f0f;
+  position: relative;
+  bottom: 40rpx;
+  line-height: 50rpx;
+  max-width: 553rpx;
+}

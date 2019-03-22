@@ -1,0 +1,191 @@
+page {
+  background-image: linear-gradient(to bottom, #369e9d, #44cdac);
+}
+
+.time-block {
+  width: 100%;
+  padding-top: 114rpx;
+  color: #fff;
+  text-align: center;
+}
+
+.time-top {
+  font-size: 32rpx;
+  margin-bottom: 27rpx;
+}
+
+.time-top>image {
+  width: 36rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 17rpx;
+}
+
+.time-top>text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.time-bottom {
+  font-size: 100rpx;
+  letter-spacing: 20rpx;
+  font-family: 'PingFang-SC-Light';
+}
+
+/* 水波浪动画 begin */
+
+@keyframes warn {
+  0% {
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  5% {
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@-webkit-keyframes warn {
+  0% {
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  5% {
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.progress-block {
+  position: relative;
+  padding: 60rpx 0 119rpx 0;
+  width: 100%;
+  height: 444rpx;
+}
+
+.the-percent, .pulse1, .pulse2, .pulse3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  background-color: #fff;
+  opacity: 0;
+}
+
+/* 保持大小不变的小圆圈  */
+
+.the-percent {
+  width: 180rpx;
+  height: 180rpx;
+  z-index: 30;
+  opacity: 1;
+  background-color: #fff;
+  text-align: center;
+}
+
+.the-percent > text {
+  color: #1bbc9b;
+  display: inline-block;
+  line-height: 180rpx;
+  letter-spacing: 1px;
+  font-family: 'PingFang-SC-Medium';
+}
+
+.the-percent > text:first-of-type {
+  font-size: 60rpx;
+  margin-right: 1px;
+}
+
+.the-percent > text:last-of-type {
+  font-size: 40rpx;
+}
+
+/* 产生动画（向外扩散变大）的圆圈  */
+
+.pulse1 {
+  width: 440rpx;
+  height: 440rpx;
+  z-index: 25;
+  opacity: 1;
+  -webkit-animation: warn 1s linear infinite;
+  -moz-animation: warn 1s linear infinite;
+  animation: warn 1s 0s linear infinite;
+  animation-delay: 0.2s;
+}
+
+.pulse2 {
+  width: 440rpx;
+  height: 440rpx;
+  z-index: 20;
+  opacity: 0.6;
+  -webkit-animation: warn 1s linear infinite;
+  -moz-animation: warn 1s linear infinite;
+  animation: warn 1s 0s linear infinite;
+  animation-delay: 0.4s;
+}
+
+.pulse3 {
+  width: 440rpx;
+  height: 440rpx;
+  z-index: 15;
+  opacity: 0.3;
+  -webkit-animation: warn 1s linear infinite;
+  -moz-animation: warn 1s linear infinite;
+  animation: warn 1s 0s linear infinite;
+  animation-delay: 0.6s;
+}
+
+.pulse1, .pulse2, .pulse3 {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* 水波浪动画 begin */
+
+.txt-status {
+  border: 1px solid rgba(255, 252, 252, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  display: block;
+  margin: 20rpx auto 0 auto;
+  width: 326rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  font-size: 32rpx;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  border-radius:200rpx;
+}

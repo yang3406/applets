@@ -1,0 +1,176 @@
+.err-tips {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  background-color: orange;
+  color: #fff;
+  text-align: center;
+}
+
+.step-contain {
+  text-align: center;
+  border-bottom: 28rpx solid #ebebeb;
+  padding: 51rpx 0 49rpx 0;
+}
+
+.step-panel {
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 auto;
+  width: 89%;
+}
+
+.step-item {
+  float: left;
+  padding: 0 2%;
+  text-align: center;
+}
+
+.step-item>image {
+  width: 76rpx;
+  margin-bottom: 10rpx;
+}
+
+.step-item>text {
+  display: block;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 24rpx;
+}
+
+.step-item.active>text {
+  color: #1bbc9b;
+}
+
+.icon-split {
+  margin: 0 3%;
+  border: 2rpx solid #b7b7b7;
+  width: 80rpx;
+  height: 0;
+  float: left;
+  -webkit-transform: translateY(38rpx);
+  transform: translateY(38rpx);
+}
+
+.icon-split.active {
+  border: 2rpx solid #1bbc9b;
+}
+
+.confirm-bind, .confirm-openpay {
+  padding: 53rpx 32rpx;
+  text-align: center;
+}
+
+.confirm-bind>image, .confirm-openpay>image {
+  width: 489rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.confirm-bind>text, .confirm-openpay>text {
+  display: block;
+  font-size: 34rpx;
+  color: rgba(0, 0, 0, 0.88);
+  margin: 50rpx 0;
+}
+
+.form-block {
+  border-bottom: 1px solid #ebebeb;
+  padding-left: 4%;
+}
+
+.form-item {
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 32rpx;
+  color: rgba(0, 0, 0, 0.88);
+  position: relative;
+}
+
+.form-item:first-of-type {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.form-item>text {
+  display: inline-block;
+  width: 160rpx;
+}
+
+.form-item>input::-webkit-input-placeholder, .form-item>input::placeholder {
+  font-size: 32rpx;
+}
+
+.form-item .txt-tel {
+  width: 240rpx;
+  height: 90rpx;
+  padding-left: 2%;
+  color: rgba(0, 0, 0, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 170rpx;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.form-item .txt-code {
+  width: 240rpx;
+  height: 90rpx;
+  padding-left: 2%;
+  color: rgba(0, 0, 0, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 170rpx;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.form-item .btn-getcode {
+  width: 231rpx;
+  height: 50rpx;
+  line-height: 46rpx;
+  color: #ccc;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.form-item .btn-getcode.can-do {
+  color: #1bbc9b;
+}
+
+button[type="primary"].btn-bind, button[type="primary"].btn-openpay {
+  background-color: #1bbc9b;
+}
+
+button[type="primary"].btn-register {
+  background-color: #eee;
+  color: #999;
+  margin: 94rpx 5% 30rpx 5%;
+}
+
+button[type="primary"].can-regist {
+  background-color: #1bbc9b;
+  color: #fff;
+}
+
+.icon-clear {
+  width: 32rpx;
+  position: absolute;
+  top: 50%;
+  left: 430rpx;
+  z-index: 10;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

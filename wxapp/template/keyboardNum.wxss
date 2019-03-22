@@ -1,0 +1,68 @@
+.numkb-panel {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  background-color: #eee;
+  box-shadow: #666 0 0 6px;
+}
+
+.numkb-handle {
+  width: 94%;
+  line-height: 70rpx;
+  padding: 0 3%;
+  overflow: hidden;
+}
+
+.numkb-handle-close {
+  float: right;
+  color: #1bbc9b;
+  font-size: 32rpx;
+}
+
+.numkb-keys {
+  background-color: #eee;
+  overflow: hidden;
+  text-align: center;
+}
+
+.numkb-keys>text {
+  background-color: #fff;
+  width: 33.3%;
+  line-height: 100rpx;
+  height: 100rpx;
+  font-size: 56rpx;
+  color: #333;
+  float: left;
+  border-bottom: 1rpx solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.numkb-keys>text:not(:nth-child(3n)) {
+  border-right: 1rpx solid #e5e5e5;
+}
+
+.numkb-keys>text:nth-child(10), .numkb-keys>text:nth-child(12) {
+  background-color: #e9e9e9;
+}
+
+.numkb-keys>text:nth-child(10), .numkb-keys>text:nth-child(11),
+.numkb-keys>text:nth-child(12) {
+  border-bottom: 0;
+}
+.numkb-keys .icon-del{
+   width: 33.3%;
+  line-height: 90rpx;
+  height: 100rpx;
+  float: left;
+}
+.numkb-keys .icon-del > image {
+  width: 46rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.numkb-keys>text.numkey-bgcolor{
+  background-color: #eee;
+}
